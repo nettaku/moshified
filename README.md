@@ -1,3 +1,4 @@
 # Moshified
-A new line of code
-Yet another line of code
+
+Mosh's project
+How to make a modern, responsible website frontend.
