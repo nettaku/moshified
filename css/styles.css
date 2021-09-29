@@ -1,9 +1,15 @@
 :root {
   --color-primary: #2584ff;
   --color-secondary: #00d9ff;
-  --color-accent: #ff34ff;
+  --color-accent: #ff3400;
   --color-headings: #1b0760;
   --color-body: #918ca4;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
 }
 
 /* Typography */
@@ -154,6 +160,87 @@ p {
   border-radius: 100%;
   justify-content: center;
   align-items: center;
+}
+
+/* Buttons */
+.button {
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 2rem 3rem;
+  border-radius: 40px;
+  display: inline-block;
+  margin: 1rem 2rem;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.button--outline {
+  color: var(--color-headings);
+  border: 2px solid var(--color-headings);
+}
+
+.button--outline:hover {
+  background-color: var(--color-headings);
+  color: white;
+}
+
+.button--block {
+  display: block;
+  text-align: center;
+}
+
+.button--accent {
+  color: white;
+  background-color: var(--color-accent);
+}
+
+.button--accent:hover {
+  background-color: #fc4e23;
+}
+
+.button--primary {
+  color: white;
+  background-color: var(--color-primary);
+}
+
+.button--headings:hover {
+  background-color: #4d1cff;
+}
+
+.button--headings {
+  color: white;
+  background-color: var(--color-headings);
+}
+
+.button--secondary {
+  color: white;
+  background-color: var(--color-secondary);
+}
+
+.button--secondary:hover {
+  background-color: #49e6ff;
+}
+
+.button-icon-container {
+  display: inline-flex;
+  justify-content: center;
+  align-items: baseline;
+  position: relative;
+  top: 3px;
+}
+
+.button-icon {
+  fill: white;
+  width: 1.8rem;
+  height: 1.8rem;
+  margin-right: 0.5rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .button {
+    font-size: 1.5rem;
+  }
 }
 
 @media screen and (min-width: 1024px) {
