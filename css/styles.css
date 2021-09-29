@@ -100,6 +100,42 @@ p {
   }
 }
 
+/* Lists */
+.list {
+  list-style: none;
+  padding-left: 0;
+  color: var(--color-headings);
+}
+
+.list--bold {
+  font-weight: bold;
+}
+
+.list--inline .list__item {
+  display: inline-block;
+  margin-right: 2rem;
+}
+
+.list--tick .list__item::before {
+  content: url(../icons/tick.svg);
+  margin-right: 0.5rem;
+}
+
+.list--tick2 {
+  list-style-image: url(../icons/tick.svg);
+  padding-left: 3rem;
+}
+
+.list--tick2 .list__item {
+  padding-left: 0.5rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .list--tick2 .list__item {
+    padding-left: 0;
+  }
+}
+
 @media screen and (min-width: 1024px) {
   /* 1024px 이상인 경우 */
   body {
