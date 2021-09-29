@@ -52,7 +52,7 @@ p {
 }
 
 @media screen and (min-width: 1024px) {
-  .link-arrow {
+  .link {
     font-size: 1.5rem;
   }
 }
@@ -65,6 +65,39 @@ p {
 
 .link:hover::after {
   margin-left: 1rem;
+}
+
+/* Badges */
+.badge {
+  border-radius: 2rem;
+  font-weight: 600;
+  font-size: 2rem;
+  padding: 0.5rem 2rem;
+  white-space: nowrap;
+}
+
+.badge--primary {
+  background: var(--color-primary);
+  color: white;
+}
+
+.badge--secondary {
+  background: var(--color-primary);
+  color: white;
+}
+
+.badge--small {
+  font-size: 1.6rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .badge {
+    font-size: 1.5rem;
+  }
+
+  .badge {
+    font-size: 1.2rem;
+  }
 }
 
 @media screen and (min-width: 1024px) {
