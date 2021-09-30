@@ -177,6 +177,11 @@ p {
   margin: 2rem, 3rem;
 }
 
+.button--small {
+  font-size: 1.5rem;
+  padding: 1.5rem 2rem;
+}
+
 .button--outline {
   color: var(--color-headings);
   border: 2px solid var(--color-headings);
@@ -516,6 +521,56 @@ p {
   background-color: var(--color-accent);
   top: 20px;
   right: -30px;
+}
+
+/* Callouts */
+.callout {
+  background-color: var(--color-primary);
+  border-radius: 10px;
+  color: white;
+}
+
+.callout .callout__text {
+  display: block;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.callout .callout__title {
+  margin: 0;
+  color: white;
+  font-size: 3rem;
+  text-transform: capitalize;
+}
+
+.callout .callout__description {
+  font-size: 2rem;
+  font-weight: 300;
+  margin: 0;
+}
+
+.callout .callout__button {
+  margin-bottom: 20px;
+}
+
+.callout .button {
+  padding-right: 4rem;
+  padding-left: 4rem;
+}
+
+@media screen and (min-width: 768px) {
+  .callout {
+    grid-template-columns: 1fr auto;
+  }
+
+  .callout .callout__text {
+    text-align: left;
+  }
+
+  .callout .callout__button {
+    margin: 0 6rem 0 0;
+    /* justify-self: start; */
+  }
 }
 
 @media screen and (min-width: 1024px) {
