@@ -385,6 +385,33 @@ p {
   }
 }
 
+/* Media */
+.media {
+  display: flex;
+}
+
+.media__image {
+  padding: 2rem;
+  /* display: inline-block; */
+}
+
+.media__text {
+  padding-top: 1.8rem;
+  /* display: inline-block; */
+}
+
+.media__title {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin: 0;
+  color: var(--color-body);
+}
+
+.media__description {
+  font-size: 1.8rem;
+  padding-right: 2rem;
+}
+
 @media screen and (min-width: 1024px) {
   /* 1024px 이상인 경우 */
   body {
