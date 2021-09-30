@@ -686,6 +686,25 @@ p {
   }
 }
 
+/* Navigation Bar */
+.navigation-bar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navigation-bar .icon {
+  fill: white;
+}
+
+.navigation-bar .list {
+  color: white;
+  width: 100%;
+}
+
+.navigation-bar .list_item {
+  display: block;
+}
+
 /* @media screen and (min-width: 1140) {
   body {
     display: grid;
