@@ -308,6 +308,19 @@ p {
 }
 
 /* Plans */
+.plan {
+  position: relative;
+  margin: 1rem 0;
+}
+
+.plan--popular::after {
+  content: url(/icons/popular.svg);
+  width: 35px;
+  height: 100px;
+  position: absolute;
+  right: 60px;
+  top: -5px;
+}
 
 .plan .plan__name {
   font-size: 2.4rem;
@@ -344,6 +357,14 @@ p {
   margin: 3rem 0;
   font-weight: 600;
   letter-spacing: 1px;
+}
+
+.popular-badge {
+  width: 35px;
+  height: 100px;
+  position: absolute;
+  right: 80px;
+  top: -11px;
 }
 
 @media screen and (min-width: 1024px) {
