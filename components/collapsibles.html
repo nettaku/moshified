@@ -1,0 +1,27 @@
+<div class="container">
+  <div id="target" class="collapsible collapsible--expanded">
+    <header class="collapsible__header">
+      <h2 class="collapsible__title">Products</h2>
+      <!-- <div class="collapsible__icon-container">
+          <span class="collapsible__icon">&rsaquo;</span>
+        </div> -->
+      <img class="collapsible__icon" src="icons/chevron.svg" alt="chevron" />
+    </header>
+    <div class="collapsible__body">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque,
+      accusantium inventore laudantium tenetur vero velit aliquam aspernatur ea
+      nemo! Dolor alias aspernatur nisi dolore ipsa! Sit voluptates iusto quas?
+      Sit explicabo iste repudiandae labore perspiciatis, fuga commodi, neque
+      dolor fugit, non soluta. Libero neque doloremque cupiditate fugiat
+      incidunt optio atque!
+    </div>
+  </div>
+</div>
+<script>
+  const collapsibles = document.querySelectorAll(".collapsible");
+  collapsibles.forEach((item) =>
+    item.addEventListener("click", function () {
+      this.classList.toggle("collapsible--expanded");
+    })
+  );
+</script>

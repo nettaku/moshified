@@ -558,6 +558,51 @@ p {
   padding-left: 4rem;
 }
 
+/* Collapsible */
+.collapsible {
+  background: black;
+}
+
+.collapsible .collapsible__header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.collapsible .collapsible__title {
+  text-transform: uppercase;
+  margin: 0;
+  color: white;
+  font-size: 3rem;
+}
+
+.collapsible .collapsible__icon {
+  width: 4rem;
+  height: 4rem;
+  transform: rotate(-90deg);
+  transition: transform 0.3s;
+}
+
+.collapsible .collapsible__body {
+  max-height: 0;
+  overflow: hidden;
+  margin: 0;
+  line-height: 2;
+  text-transform: capitalize;
+  color: var(--color-body);
+  opacity: 0;
+  transition: all 0.5s;
+}
+
+.collapsible--expanded .collapsible__icon {
+  transform: rotate(0);
+}
+
+.collapsible--expanded .collapsible__body {
+  max-height: 100vh;
+  opacity: 1;
+  /* overflow: visible; */
+}
+
 @media screen and (min-width: 768px) {
   .callout {
     grid-template-columns: 1fr auto;
