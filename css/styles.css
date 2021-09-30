@@ -491,6 +491,33 @@ p {
   }
 }
 
+/* Testimonials */
+.testimonials .image-container {
+  position: relative;
+  width: 100%;
+}
+
+.testimonials .image {
+  width: 100%;
+}
+
+.testimonials .grid-item {
+  padding: 3rem;
+  margin: 0;
+}
+
+.testimonials .image-container .icon {
+  fill: white;
+  background-color: var(--color-accent);
+}
+
+.testimonials .icon-container {
+  position: absolute;
+  background-color: var(--color-accent);
+  top: 20px;
+  right: -30px;
+}
+
 @media screen and (min-width: 1024px) {
   /* 1024px 이상인 경우 */
   body {
@@ -507,5 +534,16 @@ p {
 
   h3 {
     font-size: 2.4rem;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  body {
+    display: flex;
+    justify-content: center;
+  }
+
+  .container {
+    width: 1280px;
   }
 }
