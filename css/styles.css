@@ -4,6 +4,7 @@
   --color-accent: #ff3400;
   --color-headings: #1b0760;
   --color-body: #918ca4;
+  --color-border: #ccc;
 }
 
 *,
@@ -170,9 +171,9 @@ p {
   padding: 2rem 3rem;
   border-radius: 40px;
   display: inline-block;
-  margin: 1rem 2rem;
   cursor: pointer;
   white-space: nowrap;
+  margin: 2rem, 3rem;
 }
 
 .button--outline {
@@ -227,13 +228,13 @@ p {
   justify-content: center;
   align-items: baseline;
   position: relative;
-  top: 3px;
+  top: 6px;
 }
 
 .button-icon {
   fill: white;
-  width: 1.8rem;
-  height: 1.8rem;
+  width: 2.2rem;
+  height: 2.2rem;
   margin-right: 0.5rem;
 }
 
@@ -246,7 +247,7 @@ p {
 /* Inputs */
 .input {
   border-radius: 30px;
-  border: 1px solid #ccc;
+  border: 1px solid var(--color-border);
   color: var(--color-headings);
   font-size: 2rem;
   outline: 0;
@@ -262,8 +263,20 @@ p {
 }
 
 .input-group {
-  border: 2px solid #ccc;
-  border-radius: 3rem;
+  border: 2px solid var(--color-border);
+  border-radius: 40px;
+  display: flex;
+  /* justify-content: space-between; */
+  padding: 0.1rem;
+}
+
+.input-group .input {
+  border: 0;
+  flex-grow: 1;
+}
+
+.input-group .button {
+  margin: 1px;
 }
 
 @media screen and (min-width: 1024px) {
