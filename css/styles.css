@@ -465,6 +465,32 @@ p {
   }
 }
 
+/* Grids */
+.grid {
+  display: grid;
+}
+
+.grid-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .grid--cols-2 {
+    /* grid-template-columns: 1fr 1fr; */
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .grid--cols-3 {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+  }
+}
+
 @media screen and (min-width: 1024px) {
   /* 1024px 이상인 경우 */
   body {
