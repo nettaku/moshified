@@ -663,6 +663,10 @@ p {
   color: #7b858b;
 }
 
+.block__tagline {
+  font-size: 1.8rem;
+}
+
 .block__heading {
   margin-top: 0;
 }
@@ -904,6 +908,47 @@ p {
   .domain .button {
     padding: 0.8rem 2.5rem;
   }
+}
+
+/* Feature */
+.feature {
+  margin: 4rem 0;
+}
+
+.feature__media {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+}
+
+.feature .grid--cols-2 {
+  gap: 5rem;
+}
+
+.feature .media__image {
+  padding: 0;
+}
+
+.feature .media__text {
+  padding-top: 0;
+}
+
+.feature .media__title {
+  color: var(--color-headings);
+  margin-bottom: 1rem;
+}
+
+.feature__header {
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.feature__header .block__heading {
+  font-size: 3rem;
+}
+
+.feature__image {
+  width: 100%;
 }
 
 @media screen and (min-width: 1024px) {
