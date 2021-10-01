@@ -334,13 +334,26 @@ p {
   margin: 1rem 0;
 }
 
+.plan {
+  transition: transform 0.3s;
+}
+
+.plan--popular {
+  transform: scale(1.1);
+  transition: transform 0.3s;
+}
+
+.plan .card {
+  margin: 4rem 2rem;
+}
+
 .plan--popular::after {
   content: url(/icons/popular.svg);
   width: 35px;
   height: 100px;
   position: absolute;
-  right: 60px;
-  top: -5px;
+  right: 45px;
+  top: 36px;
 }
 
 .plan .plan__name {
@@ -375,9 +388,14 @@ p {
 }
 
 .plan .list__item {
-  margin: 3rem 0;
+  margin: 1.5rem 0;
   font-weight: 600;
   letter-spacing: 1px;
+}
+
+.plan .button {
+  margin-top: 5rem;
+  padding: 1rem 3rem;
 }
 
 .popular-badge {
@@ -403,6 +421,18 @@ p {
 
   .plan__description {
     font-size: 1.7rem;
+  }
+
+  .plan .card {
+    transition: transform 0.3s;
+  }
+
+  .plan:hover {
+    transform: scale(1.05);
+  }
+
+  .plan--popular:hover {
+    transform: scale(1.15);
   }
 }
 
