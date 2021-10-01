@@ -32,6 +32,7 @@ h2,
 h3 {
   color: var(--color-headings);
   margin-bottom: 1rem;
+  line-height: 1.2;
 }
 
 h1 {
@@ -82,6 +83,7 @@ p {
   font-size: 2rem;
   padding: 0.5rem 2rem;
   white-space: nowrap;
+  color: var(--color-headings);
 }
 
 .badge--primary {
@@ -277,14 +279,19 @@ p {
 }
 
 .input-group {
-  border: 2px solid var(--color-border);
+  /* border: 2px solid var(--color-border); */
+  box-shadow: 0 0 30px #dedede;
   border-radius: 40px;
   display: flex;
   /* justify-content: space-between; */
   padding: 0.1rem;
+  margin: 2rem;
+  margin-top: 4rem;
 }
 
 .input-group .input {
+  min-width: 0;
+  width: auto;
   border: 0;
   flex-grow: 1;
 }
@@ -735,6 +742,24 @@ p {
   width: 100%;
 } */
 
+@media screen and (min-width: 1024px) {
+  .navigation-bar .icon {
+    display: none;
+  }
+
+  .navigation-bar .collapsible + .list {
+    width: auto;
+    max-height: 100vh;
+    display: flex;
+    margin-right: 3rem;
+  }
+
+  .navigation-bar .list .list__item {
+    margin-right: 3rem;
+    border-bottom: none;
+  }
+}
+
 /* Heroes */
 .hero {
   text-align: center;
@@ -775,43 +800,79 @@ p {
   .hero .grid-item {
     align-items: start;
   }
-  
+
   .hero .button {
     font-size: 1.3rem;
     padding: 0.5rem 1rem;
   }
+}
 
 @media screen and (min-width: 1024px) {
   .hero h1 {
     font-size: 7rem;
   }
-  
+
   .hero p {
     font-size: 2.2rem;
   }
-  
+
   .hero .button {
     font-size: 1.5rem;
     padding: 0.6em 1.2rem;
   }
 }
 
+/* Domains */
+
+.domain .block__heading {
+  font-size: 4rem;
+}
+
+.domain__tagline {
+  font-size: 2.5rem;
+  line-height: 1.3;
+  margin: 3rem;
+}
+
+.domain .grid--cols-3 {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.domain .grid-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.domain .badge {
+  margin: 20px 0;
+}
 
 @media screen and (min-width: 1024px) {
-  .navigation-bar .icon {
-    display: none;
-  }
-
-  .navigation-bar .collapsible + .list {
-    width: auto;
-    max-height: 100vh;
+  .domain .grid--cols-3 {
     display: flex;
-    margin-right: 3rem;
+    justify-content: center;
   }
 
-  .navigation-bar .list .list__item {
-    margin-right: 3rem;
-    border-bottom: none;
+  .domain .grid-item {
+    flex-direction: row;
+  }
+
+  .domain .badge {
+    font-size: 1.5rem;
+  }
+
+  .domain .input-group {
+    font-size: 1rem;
+    width: 700px;
+    margin: 0 auto;
+  }
+
+  .domain .input {
+    padding: 0.8rem 2.5rem;
+  }
+
+  .domain .button {
+    padding: 0.8rem 2.5rem;
   }
 }
 
@@ -833,9 +894,3 @@ p {
     font-size: 2.4rem;
   }
 }
-
-/* @media screen and (min-width: 1140) {
-  body {
-    display: grid;
-  }
-} */
