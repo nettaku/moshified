@@ -17,19 +17,25 @@
   <body>
     <section class="block block--dark">
       <div class="navigation-bar container">
-        <div class="container">
-          <img src="images/logo.png" />
-          <svg class="icon icon--primary">
-            <use xlink:href="icons/sprite.svg#menu"></use>
-          </svg>
-          <ul class="list list--inline">
-            <li class="list__item">Hosting</li>
-            <li class="list__item">WPs</li>
-            <li class="list__item">Domain</li>
-            <li class="list__item">Pricing</li>
-          </ul>
-        </div>
+        <img src="images/logo.png" />
+        <svg class="icon icon--primary collapsible">
+          <use xlink:href="icons/sprite.svg#menu"></use>
+        </svg>
+        <ul class="list list--inline">
+          <li class="list__item">Hosting</li>
+          <li class="list__item">WPs</li>
+          <li class="list__item">Domain</li>
+          <li class="list__item">Pricing</li>
+        </ul>
       </div>
     </section>
+    <script>
+      const collapsibles = document.querySelectorAll(".collapsible");
+      collapsibles.forEach((item) =>
+        item.addEventListener("click", function () {
+          this.classList.toggle("collapsible--expanded");
+        })
+      );
+    </script>
   </body>
 </html>
