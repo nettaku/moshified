@@ -16,18 +16,18 @@
   </head>
   <body>
     <section class="block block--dark">
-      <div class="navigation-bar container">
-        <img src="images/logo.png" />
-        <svg class="icon icon--primary collapsible">
+      <nav class="navigation-bar container">
+        <a href="/"><img class="nav__brand" src="images/logo.svg" /></a>
+        <svg class="icon icon--white collapsible">
           <use xlink:href="icons/sprite.svg#menu"></use>
         </svg>
         <ul class="list list--inline">
-          <li class="list__item">Hosting</li>
-          <li class="list__item">WPs</li>
-          <li class="list__item">Domain</li>
-          <li class="list__item">Pricing</li>
+          <li class="list__item"><a href="#">Hosting</a></li>
+          <li class="list__item"><a href="#">VPS</a></li>
+          <li class="list__item"><a href="#">Domain</a></li>
+          <li class="list__item"><a href="#">Pricing</a></li>
         </ul>
-      </div>
+      </nav>
     </section>
     <script>
       const collapsibles = document.querySelectorAll(".collapsible");
