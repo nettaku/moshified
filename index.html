@@ -14,5 +14,52 @@
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/styles.css" />
   </head>
-  <body></body>
+  <body>
+    <section class="block">
+      <header class="block__header">
+        <h2 class="block__heading">What out Customers are Sayiing</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+      </header>
+      <div class="card testimonials">
+        <div class="grid grid--cols-2">
+          <div class="grid-item">
+            <span class="image-container">
+              <image
+                class="image"
+                src="images/testimonial.jpg"
+                alt="testimonial"
+              />
+              <span class="icon-container">
+                <svg class="icon icon--primary">
+                  <use xlink:href="icons/sprite.svg#quotes"></use>
+                </svg>
+              </span>
+            </span>
+          </div>
+          <div class="grid-item">
+            <blockquote class="quote">
+              <p class="quote__text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
+                molestiae repellendus ducimus ratione laudantium nemo corrupti
+                velit culpa cumque aut.
+              </p>
+              <footer>
+                <div class="media">
+                  <div class="media__image">
+                    <svg class="icon icon--primary">
+                      <use xlink:href="icons/sprite.svg#line"></use>
+                    </svg>
+                  </div>
+                  <div class="media__text">
+                    <h3 class="media__title">John Smith</h3>
+                    <p class="media__description">ABC Company</p>
+                  </div>
+                </div>
+              </footer>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
 </html>
