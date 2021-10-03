@@ -57,7 +57,7 @@ p {
   text-transform: uppercase;
   text-decoration: none;
   font-size: 2rem;
-  font-size: bold;
+  font-weight: bold;
 }
 
 @media screen and (min-width: 1024px) {

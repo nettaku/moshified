@@ -13,11 +13,14 @@
     />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/styles.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <section class="block block--dark block--navigation-bar">
       <nav class="navigation-bar container">
-        <a href="/"><img class="nav__brand" src="images/logo.svg" /></a>
+        <a href="/"
+          ><img class="nav__brand" src="images/logo.svg" alt="brand"
+        /></a>
         <svg class="icon icon--white collapsible">
           <use xlink:href="icons/sprite.svg#menu"></use>
         </svg>
@@ -75,13 +78,14 @@
           >
         </div>
         <div class="grid domain__grid">
-            <div><span class="badge badge--small">.com $9.26</span></div>
-            <div><span class="badge badge--small">.info $14.15</span></div>
-            <div><span class="badge badge--small badge--primary">.sg $7.91</span></div>
-            <div><span class="badge badge--small">.net $12.31</span></div>
-            <div><span class="badge badge--small">.space $12.98</span></div>
-            <div><span class="badge badge--small">.xyz $10.23</span></div>
+          <div><span class="badge badge--small">.com $9.26</span></div>
+          <div><span class="badge badge--small">.info $14.15</span></div>
+          <div>
+            <span class="badge badge--small badge--primary">.sg $7.91</span>
           </div>
+          <div><span class="badge badge--small">.net $12.31</span></div>
+          <div><span class="badge badge--small">.space $12.98</span></div>
+          <div><span class="badge badge--small">.xyz $10.23</span></div>
         </div>
       </div>
     </section>
@@ -202,7 +206,7 @@
               <a href="#" class="link">learn more</a>
             </div>
           </div>
-          <div class="grid-item">
+          <div class="grid-item" data-aos="fade-right">
             <picture>
               <img class="feature__image" src="/images/easy.jpg" alt="easy" />
             </picture>
@@ -522,6 +526,10 @@
           this.classList.toggle("collapsible--expanded");
         })
       );
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
     </script>
   </body>
 </html>
