@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <section class="block block--dark">
+    <section class="block block--dark block--navigation-bar">
       <nav class="navigation-bar container">
         <a href="/"><img class="nav__brand" src="images/logo.svg" /></a>
         <svg class="icon icon--white collapsible">
@@ -29,7 +29,7 @@
         </ul>
       </nav>
     </section>
-    <section class="block block--dark block--skewed-left">
+    <section class="block block--dark block--skewed-left block--hero">
       <div class="hero container">
         <div class="grid grid--cols-2">
           <div class="grid-item">
@@ -47,7 +47,7 @@
         </div>
       </div>
     </section>
-    <section class="block">
+    <section class="block block--domain">
       <div class="container domain">
         <header class="block__header">
           <h1 class="block__heading">
@@ -74,18 +74,13 @@
             search</span
           >
         </div>
-        <div class="grid grid--cols-3">
-          <div class="grid-item">
-            <span class="badge">.com $9.26</span>
-            <span class="badge">.info $14.15</span>
-          </div>
-          <div class="grid-item">
-            <span class="badge badge--primary">.sg $7.91</span>
-            <span class="badge">.net $12.31</span>
-          </div>
-          <div class="grid-item">
-            <span class="badge">.space $12.98</span>
-            <span class="badge">.xyz $10.23</span>
+        <div class="grid domain__grid">
+            <div><span class="badge badge--small">.com $9.26</span></div>
+            <div><span class="badge badge--small">.info $14.15</span></div>
+            <div><span class="badge badge--small badge--primary">.sg $7.91</span></div>
+            <div><span class="badge badge--small">.net $12.31</span></div>
+            <div><span class="badge badge--small">.space $12.98</span></div>
+            <div><span class="badge badge--small">.xyz $10.23</span></div>
           </div>
         </div>
       </div>
@@ -177,8 +172,7 @@
         </div>
       </div>
     </section>
-
-    <section class="block container">
+    <section class="block container block--feature">
       <article class="feature">
         <header class="feature__header">
           <h2 class="block__heading">host on the cloud to keep growing</h2>
@@ -278,7 +272,7 @@
         </div>
       </article>
     </section>
-    <section class="block block--dark block--skewed-right">
+    <section class="block block--dark block--skewed-right block--showcase">
       <header>
         <h2 class="block__header">User-Friendly Control Panel</h2>
       </header>

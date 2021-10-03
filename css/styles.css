@@ -664,8 +664,39 @@ p {
 
 /* Blocks */
 .block {
-  --padding-vertical: 6rem;
-  padding: var(--padding-vertical) 2rem;
+  --padding-top: 6rem;
+  --padding-bottom: 0;
+  padding: var(--padding-top) 2rem var(--padding-bottom) 2rem;
+}
+
+.block--navigation-bar {
+  /* border: 10px solid red; */
+  border: none;
+  /* border-bottom: 1px solid red; */
+}
+
+.block--hero {
+  padding-top: 0;
+  padding-bottom: 3rem;
+  /* border-top: 1px solid yellow; */
+}
+
+.block--domain {
+  padding-top: 9rem;
+  padding-bottom: 3rem;
+}
+
+.block--feature {
+  padding-bottom: 3rem;
+}
+
+.block--showcase {
+  padding-bottom: 9rem;
+}
+
+.block--callout {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
 }
 
 .block__header {
@@ -699,12 +730,12 @@ p {
 
 .block--skewed-right {
   clip-path: polygon(0 0, 0 100%, 100% 90%, 100% 0);
-  padding-bottom: calc(var(--padding-vertical) + 4rem);
+  padding-bottom: calc(var(--padding-top) + 4rem);
 }
 
 .block--skewed-left {
   clip-path: polygon(0 0, 0 90%, 100% 100%, 100% 0);
-  padding-bottom: calc(var(--padding-vertical) + 4rem);
+  padding-bottom: calc(var(--padding-top) + 4rem);
 }
 
 .block--path-custom {
@@ -778,7 +809,7 @@ p {
 
 .navigation-bar .list__item {
   padding: 0.5rem 0;
-  border-bottom: 1px solid #222;
+  /* border-bottom: 1px solid #222; */
 }
 
 .navigation-bar .collapsible {
@@ -894,10 +925,6 @@ p {
   margin: 3rem;
 }
 
-.domain .grid--cols-3 {
-  grid-template-columns: 1fr 1fr 1fr;
-}
-
 .domain .grid-item {
   display: flex;
   flex-direction: column;
@@ -907,14 +934,21 @@ p {
   margin: 20px 0;
 }
 
-@media screen and (min-width: 1024px) {
-  .domain .grid--cols-3 {
-    display: flex;
-    justify-content: center;
-  }
+.domain__grid {
+  display: grid;
+  text-align: center;
+  grid-template-columns: 1fr 1fr 1fr;
+}
 
-  .domain .grid-item {
-    flex-direction: row;
+@media screen and (max-width: 667px) {
+  .domain__grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .domain__grid {
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
   }
 
   .domain .badge {
@@ -924,7 +958,7 @@ p {
   .domain .input-group {
     font-size: 1rem;
     width: 700px;
-    margin: 0 auto;
+    margin: 4rem auto;
   }
 
   .domain .input {
